@@ -20,5 +20,20 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		// Sorting algorithms
+		void bubbleSort();
+		void insertionSort();
+		void quickSort(int low, int high);
+		int quickSortPartition(int low, int high);
+		void mergeSort(int left, int right);
+		void merge(int left, int mid, int right);
+		void fisherYatesShuffle();
+
+
+		void swap(int i, int j);
 		
+	private:
+		int radii[5]; // Five circle radii
+
 };
